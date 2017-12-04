@@ -150,6 +150,19 @@ YAML
     end
   end
 
+  context 'if strategy is `golang_dep`' do
+    before do
+      allow_any_instance_of(Tachikoma::Application).to receive(:load)
+      allow_any_instance_of(Tachikoma::Application).to receive(:fetch)
+      allow_any_instance_of(Tachikoma::Application).to receive(:pull_request)
+    end
+
+    it 'should be called `golang_dep` method' do
+      expect_any_instance_of(Tachikoma::Application).to receive(:golang_dep)
+      Tachikoma::Application.run 'golang_dep'
+    end
+  end
+
   describe '#bundler_parallel_option' do
     subject { described_class.new }
 

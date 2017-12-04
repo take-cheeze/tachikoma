@@ -51,4 +51,9 @@ namespace :tachikoma do
   task :run_yarn do
     Tachikoma::Application.run 'yarn'
   end
+
+  desc 'run tachikoma with golang dep'
+  task :run_golang_dep do
+    Tachikoma::Application.run 'golang_dep'
+  end
 end

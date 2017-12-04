@@ -6,7 +6,7 @@
 [![Coverage Status](http://img.shields.io/coveralls/sanemat/tachikoma/master.svg?style=flat)](https://coveralls.io/r/sanemat/tachikoma)
 
 **Tachikoma** is a Interval Pull Requester with
-bundler/carton/david/yarn/npm-check-updates/cocoapods/carthage/composer/none update.
+bundler/carton/david/yarn/npm-check-updates/cocoapods/carthage/composer/golang dep/none update.
 This is [Actual pull request](https://github.com/sanemat/tachikoma/pull/152).
 
 ![tachikoma](https://cloud.githubusercontent.com/assets/75448/4431995/1f7817e4-4681-11e4-8235-64df5c562496.gif 'tachikoma')
@@ -27,6 +27,7 @@ You can use these strategies:
 - CocoaPods (Objective-C, Swift)
 - Carthage (Swift)
 - Composer (PHP)
+- [Dep](https://github.com/golang/dep) (Golang)
 - None (without strategy)
 
 If you use carton, then you use `tachikoma:run_carton` instead of `tachikoma:run_bundler`.
